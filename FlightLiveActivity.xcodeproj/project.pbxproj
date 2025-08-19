@@ -6,15 +6,74 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5AFB81BB2E55030700B85948 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFB81BA2E55030700B85948 /* WidgetKit.framework */; };
+		5AFB81BD2E55030700B85948 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFB81BC2E55030700B85948 /* SwiftUI.framework */; };
+		5AFB81CA2E55030800B85948 /* FlightLiveActivityWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5AFB81B82E55030700B85948 /* FlightLiveActivityWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5AFB81E32E55049A00B85948 /* LiveActivityData in Frameworks */ = {isa = PBXBuildFile; productRef = 5AFB81E22E55049A00B85948 /* LiveActivityData */; };
+		5AFB82042E5506D500B85948 /* LiveActivityData in Frameworks */ = {isa = PBXBuildFile; productRef = 5AFB82032E5506D500B85948 /* LiveActivityData */; };
+		5AFB82072E5506E400B85948 /* LiveActivityData in Frameworks */ = {isa = PBXBuildFile; productRef = 5AFB82062E5506E400B85948 /* LiveActivityData */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5AFB81C82E55030800B85948 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AFB81952E54E44D00B85948 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AFB81B72E55030700B85948;
+			remoteInfo = FlightLiveActivityWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5AFB81CF2E55030800B85948 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5AFB81CA2E55030800B85948 /* FlightLiveActivityWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5AFB819D2E54E44D00B85948 /* FlightLiveActivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightLiveActivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AFB81B32E5501D000B85948 /* LiveActivityData */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LiveActivityData; sourceTree = "<group>"; };
+		5AFB81B82E55030700B85948 /* FlightLiveActivityWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FlightLiveActivityWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AFB81BA2E55030700B85948 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		5AFB81BC2E55030700B85948 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5AFB81CB2E55030800B85948 /* Exceptions for "FlightLiveActivityWidget" folder in "FlightLiveActivityWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5AFB81B72E55030700B85948 /* FlightLiveActivityWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5AFB819F2E54E44D00B85948 /* FlightLiveActivity */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = FlightLiveActivity;
+			sourceTree = "<group>";
+		};
+		5AFB81BE2E55030700B85948 /* FlightLiveActivityWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5AFB81CB2E55030800B85948 /* Exceptions for "FlightLiveActivityWidget" folder in "FlightLiveActivityWidgetExtension" target */,
+			);
+			path = FlightLiveActivityWidget;
+			sourceTree = "<group>";
+		};
+		5AFB820A2E5509B200B85948 /* Shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -24,6 +83,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AFB81E32E55049A00B85948 /* LiveActivityData in Frameworks */,
+				5AFB82042E5506D500B85948 /* LiveActivityData in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AFB81B52E55030700B85948 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AFB82072E5506E400B85948 /* LiveActivityData in Frameworks */,
+				5AFB81BD2E55030700B85948 /* SwiftUI.framework in Frameworks */,
+				5AFB81BB2E55030700B85948 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,9 +104,12 @@
 		5AFB81942E54E44D00B85948 = {
 			isa = PBXGroup;
 			children = (
-				5AFB819F2E54E44D00B85948 /* FlightLiveActivity */,
-				5AFB819E2E54E44D00B85948 /* Products */,
 				5AFB81B32E5501D000B85948 /* LiveActivityData */,
+				5AFB820A2E5509B200B85948 /* Shared */,
+				5AFB819F2E54E44D00B85948 /* FlightLiveActivity */,
+				5AFB81BE2E55030700B85948 /* FlightLiveActivityWidget */,
+				5AFB81B92E55030700B85948 /* Frameworks */,
+				5AFB819E2E54E44D00B85948 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -43,8 +117,18 @@
 			isa = PBXGroup;
 			children = (
 				5AFB819D2E54E44D00B85948 /* FlightLiveActivity.app */,
+				5AFB81B82E55030700B85948 /* FlightLiveActivityWidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		5AFB81B92E55030700B85948 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AFB81BA2E55030700B85948 /* WidgetKit.framework */,
+				5AFB81BC2E55030700B85948 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -57,20 +141,49 @@
 				5AFB81992E54E44D00B85948 /* Sources */,
 				5AFB819A2E54E44D00B85948 /* Frameworks */,
 				5AFB819B2E54E44D00B85948 /* Resources */,
+				5AFB81CF2E55030800B85948 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AFB81C92E55030800B85948 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5AFB819F2E54E44D00B85948 /* FlightLiveActivity */,
+				5AFB820A2E5509B200B85948 /* Shared */,
+			);
+			name = FlightLiveActivity;
+			packageProductDependencies = (
+				5AFB81E22E55049A00B85948 /* LiveActivityData */,
+				5AFB82032E5506D500B85948 /* LiveActivityData */,
+			);
+			productName = FlightLiveActivity;
+			productReference = 5AFB819D2E54E44D00B85948 /* FlightLiveActivity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5AFB81B72E55030700B85948 /* FlightLiveActivityWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AFB81CC2E55030800B85948 /* Build configuration list for PBXNativeTarget "FlightLiveActivityWidgetExtension" */;
+			buildPhases = (
+				5AFB81B42E55030700B85948 /* Sources */,
+				5AFB81B52E55030700B85948 /* Frameworks */,
+				5AFB81B62E55030700B85948 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				5AFB819F2E54E44D00B85948 /* FlightLiveActivity */,
+				5AFB81BE2E55030700B85948 /* FlightLiveActivityWidget */,
+				5AFB820A2E5509B200B85948 /* Shared */,
 			);
-			name = FlightLiveActivity;
+			name = FlightLiveActivityWidgetExtension;
 			packageProductDependencies = (
+				5AFB82062E5506E400B85948 /* LiveActivityData */,
 			);
-			productName = FlightLiveActivity;
-			productReference = 5AFB819D2E54E44D00B85948 /* FlightLiveActivity.app */;
-			productType = "com.apple.product-type.application";
+			productName = FlightLiveActivityWidgetExtension;
+			productReference = 5AFB81B82E55030700B85948 /* FlightLiveActivityWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -85,6 +198,9 @@
 					5AFB819C2E54E44D00B85948 = {
 						CreatedOnToolsVersion = 16.3;
 					};
+					5AFB81B72E55030700B85948 = {
+						CreatedOnToolsVersion = 16.3;
+					};
 				};
 			};
 			buildConfigurationList = 5AFB81982E54E44D00B85948 /* Build configuration list for PBXProject "FlightLiveActivity" */;
@@ -96,18 +212,29 @@
 			);
 			mainGroup = 5AFB81942E54E44D00B85948;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5AFB82052E5506E400B85948 /* XCLocalSwiftPackageReference "LiveActivityData" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5AFB819E2E54E44D00B85948 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				5AFB819C2E54E44D00B85948 /* FlightLiveActivity */,
+				5AFB81B72E55030700B85948 /* FlightLiveActivityWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5AFB819B2E54E44D00B85948 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AFB81B62E55030700B85948 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -124,7 +251,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5AFB81B42E55030700B85948 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5AFB81C92E55030800B85948 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AFB81B72E55030700B85948 /* FlightLiveActivityWidgetExtension */;
+			targetProxy = 5AFB81C82E55030800B85948 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5AFB81A62E54E44E00B85948 /* Debug */ = {
@@ -253,11 +395,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FlightLiveActivity/FlightLiveActivity.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7ZPDPWR8XU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -281,11 +425,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FlightLiveActivity/FlightLiveActivity.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7ZPDPWR8XU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,6 +444,60 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jca.FlightLiveActivity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5AFB81CD2E55030800B85948 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7ZPDPWR8XU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlightLiveActivityWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FlightLiveActivityWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jca.FlightLiveActivity.FlightLiveActivityWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5AFB81CE2E55030800B85948 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7ZPDPWR8XU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlightLiveActivityWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FlightLiveActivityWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jca.FlightLiveActivity.FlightLiveActivityWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -325,7 +525,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		5AFB81CC2E55030800B85948 /* Build configuration list for PBXNativeTarget "FlightLiveActivityWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AFB81CD2E55030800B85948 /* Debug */,
+				5AFB81CE2E55030800B85948 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		5AFB82052E5506E400B85948 /* XCLocalSwiftPackageReference "LiveActivityData" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = LiveActivityData;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5AFB81E22E55049A00B85948 /* LiveActivityData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LiveActivityData;
+		};
+		5AFB82032E5506D500B85948 /* LiveActivityData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LiveActivityData;
+		};
+		5AFB82062E5506E400B85948 /* LiveActivityData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LiveActivityData;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5AFB81952E54E44D00B85948 /* Project object */;
 }
