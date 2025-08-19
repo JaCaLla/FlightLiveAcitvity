@@ -45,6 +45,7 @@
 		5AFB81B82E55030700B85948 /* FlightLiveActivityWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FlightLiveActivityWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AFB81BA2E55030700B85948 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		5AFB81BC2E55030700B85948 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		5AFB820D2E550A4D00B85948 /* PayloadGenerator */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PayloadGenerator; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -104,6 +105,7 @@
 		5AFB81942E54E44D00B85948 = {
 			isa = PBXGroup;
 			children = (
+				5AFB820D2E550A4D00B85948 /* PayloadGenerator */,
 				5AFB81B32E5501D000B85948 /* LiveActivityData */,
 				5AFB820A2E5509B200B85948 /* Shared */,
 				5AFB819F2E54E44D00B85948 /* FlightLiveActivity */,
