@@ -5,6 +5,10 @@ Sample app that shows how to use live activities. This is the basecode for follo
 <img src="media/review.mov" alt="Playground on action" width="600">
 
 
+## Review
+<img src="media/review.gif" alt="Playground on action" width="600">
+
+
 ## Requirements
 
 - **Xcode 15.0 or later**
